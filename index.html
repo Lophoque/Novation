@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Novation — Média</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#" aria-label="Novation accueil">
+      <img src="assets/logo-inspiration.png" alt="Logo Novation" />
+      <span>NOVATION</span>
+    </a>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-text">
+        <p class="kicker">À la une</p>
+        <h1>Idées indépendantes<br>Rédaction Libre</h1>
+        <p>Novation donne accès gratuitement à des articles liés à l’actualité politique et culturelle ainsi qu’à des enquêtes exclusives explorant les enjeux contemporains.</p>
+      </div>
+      <div class="hero-panel">
+        <p>Novation</p>
+        <span>Actualité · politique · culture · enquêtes · opinions</span>
+      </div>
+    </section>
+
+    <section class="articles" aria-labelledby="latest-title">
+      <div class="section-title">
+        <h2 id="latest-title">Dernières publications</h2>
+        <span></span>
+      </div>
+      <div class="article-grid">
+        <article class="card" tabindex="0" data-article="alloncle">
+          <img src="assets/rapport-alloncle.png" alt="Affiche Rapport Alloncle" />
+          <div class="card-content">
+            <p class="category">Enquête</p>
+            <h3>Rapport Alloncle : que faut-il retenir ?</h3>
+            <p class="date">13 mai 2026</p>
+            <button>Lire l'article →</button>
+          </div>
+        </article>
+
+        <article class="card" tabindex="0" data-article="chine">
+          <img src="assets/sommet-chine-usa.png" alt="Affiche Sommet Chine USA" />
+          <div class="card-content">
+            <p class="category">Géopolitique</p>
+            <h3>Sommet Chine USA : que faut-il retenir ?</h3>
+            <p class="date">25 mai 2026</p>
+            <button>Lire l'article →</button>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© NOVATION — Tous droits réservés</p>
+    <a class="instagram" href="https://www.instagram.com/" target="_blank" rel="noreferrer" aria-label="Instagram">
+    <svg class="instagram-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+      <rect x="3" y="3" width="18" height="18" rx="5" ry="5"></rect>
+      <circle cx="12" cy="12" r="4"></circle>
+      <circle cx="17.5" cy="6.5" r="1.2"></circle>
+    </svg>
+    </a>
+  </footer>
+
+  <div class="modal" id="articleModal" aria-hidden="true">
+    <div class="modal-backdrop" data-close></div>
+    <article class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="close" data-close aria-label="Fermer">×</button>
+      <img id="modalImage" src="" alt="" />
+      <p class="category" id="modalCategory"></p>
+      <h1 id="modalTitle"></h1>
+      <p class="date" id="modalDate"></p>
+      <div class="article-body" id="modalBody"></div>
+    </article>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
