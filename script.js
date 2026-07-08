@@ -127,7 +127,7 @@ function openArticle(key){
   modalCategory.textContent = article.category;
   modalTitle.textContent = article.title;
   modalDate.textContent = article.date;
-  modalBody.innerHTML = article.body;
+  modalBody.innerHTML = article.body + `<p class="article-signature">Rédigé par Léon DRAI</p>`;
   modal.classList.add('active');
   modal.setAttribute('aria-hidden', 'false');
   document.body.style.overflow = 'hidden';
